@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="../css/#" /> -->
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0%;
+				margin: 0%;
+				border: 0;
+				list-style: none;
+			}
+
+			body {
+				color: white;
+				font-size: 20px;
+			}
+
+			.nav {
+				/* sticky: 元素根据正常文档流进行定位，然后相对它的最近滚动祖先; 
+				基于 top、right、bottom 和 left 的值进行偏移。 */
+				position: sticky;
+				top: 0;
+				overflow: hidden;
+				background-color: aquamarine;
+			}
+
+			.nav a {
+				float: right;
+				display: block;
+				font: bold 30px/50px 'Times New Roman', 'Courier New', Courier, monospace;
+				text-align: center;
+				margin-right: 30px;
+				text-decoration: none;
+				height: 50px;
+				width: 150px;
+				color: #fff;
+			}
+
+			.test {
+				height: 10000px;
+				background-color: orange;
+			}
+
+			.backblock {
+				/* CSS 中提供了 5 个有关过渡的属性: 
+				transition-property：设置元素中参与过渡的属性；
+				transition-duration：设置元素过渡的持续时间；
+				transition-timing-function：设置元素过渡的动画类型；
+				transition-delay：设置过渡效果延迟的时间，默认为 0；
+				transition：简写属性，用于同时设置上面的四个过渡属性。 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="#">About</a>
+			<a href="#">Gallery</a>
+			<a href="#">Blogs</a>
+			<a href="#">Home</a>
+			<div class="backblock"></div>
+		</div>
+		<div class="test">asdfafdsdgdsfg</div>
+		<script></script>
+	</body>
+</html>
