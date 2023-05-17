@@ -17,35 +17,50 @@
 			body {
 				color: white;
 				font-size: 20px;
+				background-color: #000;
+				background: url(../images/bg.jpg) no-repeat fixed center top;
+				background-size: cover;
 			}
 
 			.nav {
-				/* sticky: 元素根据正常文档流进行定位，然后相对它的最近滚动祖先; 
+				/* sticky: 元素根据正常文档流进行定位，然后相对它的最近滚动祖先;
 				基于 top、right、bottom 和 left 的值进行偏移。 */
-				position: sticky;
+				/* position: sticky;
 				top: 0;
-				overflow: hidden;
-				background-color: orange;
+				overflow: hidden; */
+				height: 60px;
+				color: #000;
+				background-color: rgba(255, 255, 255, 0.8);
+				font: bold 30px/50px 'Times New Roman', 'Courier New', Courier, monospace;
+				box-shadow: 0px -5px 10px 10px rgba(130, 130, 130, 1);
 			}
 
 			.nav a {
 				display: inline-block;
-				font: bold 30px/50px 'Times New Roman', 'Courier New', Courier, monospace;
-				text-align: center;
 				margin-right: 30px;
+				font-size: 25px;
 				text-decoration: none;
-				height: 50px;
-				width: 150px;
-				color: #fff;
+				line-height: 60px;
+				text-align: center;
+			}
+
+			.nav a:visited {
+				color: #000;
+			}
+
+			span.symbol {
+				line-height: 60px;
+				margin-left: 30px;
+				margin-right: 50px;
+				text-align: center;
 			}
 
 			.test {
 				height: 1000px;
-				background-color: #FFFFFF;
 			}
 
-			.backblock {
-				/* CSS 中提供了 5 个有关过渡的属性: 
+			div.backblock {
+				/* CSS 中提供了 5 个有关过渡的属性:
 				transition-property：设置元素中参与过渡的属性；
 				transition-duration：设置元素过渡的持续时间；
 				transition-timing-function：设置元素过渡的动画类型；
@@ -56,14 +71,14 @@
 	</head>
 	<body>
 		<div class="nav">
-			<span class="symbol"></span>
+			<span class="symbol">TUDOR'S BLOG</span>
 			<a href="#">主页</a>
 			<a href="#">文章</a>
 			<a href="#">画廊</a>
 			<a href="#">关于</a>
 			<div class="backblock"></div>
 		</div>
-		<div class="test">asdfafdsdgdsfg</div>
+		<div class="test"></div>
 		<script></script>
 	</body>
 </html>
