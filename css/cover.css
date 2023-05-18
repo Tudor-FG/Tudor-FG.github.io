@@ -1,0 +1,46 @@
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1519px;
+    height: 745px;
+    z-index: 1;
+    animation: covermove 0.5s ease 1.8s forwards; 
+    background: url(#) #fff;
+} 
+ 
+.content {
+    animation: content-slide-in 1.5s steps(7) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    top: 250px;
+    margin: auto;
+    color: #000;
+    text-align: center;
+    font: 900 200px/750px monospace;
+    letter-spacing: 10px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+@keyframes covermove {
+    form {
+        opacity: 1;
+        top: 0;
+        
+    }
+    to {
+        opacity: 0;
+        top: -1000px;
+        
+    }
+} 
+
+@keyframes content-slide-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 790px;
+    }
+}
