@@ -16,7 +16,7 @@ var nav = document.querySelector('.nav');
 						sliptAll[j].classList.remove('selected');
 					}
 					// this.style.color = '#FFF';
-					this.classList.add('selected'); // 通过添加类名实现颜色变化
+					this.classList.add('selected'); 
 					let len = 155 * (4 - i) + 767; // 计算背景滑块left值
 					backblock.style.left = len + 'px';
 				};
@@ -30,11 +30,24 @@ var nav = document.querySelector('.nav');
 				};
 			}
 
-			// 鼠标离开
-			for (let i = 0; i < sliptAll.length; i++) {
-				sliptAll[i].onmouseleave = function () {
-					let selected = document.querySelector('.nav .selected'); //原先被选中的元素
-					let len = 155 * (4 - selected.dataset.index) + 770;
-					backblock.style.left = len + 'px';
-				};
-			}
+			// // 鼠标离开
+			// for (let i = 0; i < sliptAll.length; i++) {
+			// 	sliptAll[i].onmouseleave = function () {
+			// 		let selected = document.querySelector('.nav .selected'); //原先被选中的元素
+			// 		let len = 155 * (4 - selected.dataset.index) + 770;
+			// 		backblock.style.left = len + 'px';
+			// 	};
+			// }
+			var nav = document.querySelector('.nav');
+			nav.onmouseleave = function () {
+				let selected = document.querySelector('.nav .selected'); //原先被选中的元素
+				let len = 155 * (4 - selected.dataset.index) + 770;
+				backblock.style.left = len + 'px';
+			};
+
+
+			// 当滚动时添加样式
+			window.addEventListener('scroll', () => {
+				let header = document.querySelector('.nav');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			});
