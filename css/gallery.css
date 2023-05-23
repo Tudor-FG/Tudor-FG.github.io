@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     /* background-color: rgb(243, 230, 241); */
-    width: 90%;
+    width: 1400px;
     height: 90vh;
     display: flex;
     margin: auto auto;
     /* padding: 0 0px; */
     /* transition: all .5s; */
-    transform: scaleX(0);
-    animation: begin 1s .5s forwards;
+    transform: scaleY(0);
+    animation: begin .5s ease-out .5s forwards;
 }
 
 .box{
@@ -20,10 +20,12 @@
     transition: .5s;
     margin: auto 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
-    border-radius: 50px;
+    border-radius: 45px;
     border: 5px solid #eee;
     background-color: #fff;
-}
+    transform: scaleY(0);
+    animation: begin .5s ease-out .5s forwards;
+    }
 
 .box > img{
     width: 200%;
@@ -43,9 +45,11 @@
 
 @keyframes begin {
     from {
-        transform: scaleX(0);
+        /* height: 0%; */
+        transform: scaleY(0);
     }
     to {
-        transform: scaleX(1);
+        /* height: 85%; */
+        transform: scaleY(1);
     }
 }

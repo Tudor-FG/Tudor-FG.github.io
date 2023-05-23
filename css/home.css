@@ -1,0 +1,157 @@
+.test {
+    height: 2110px;
+}
+
+.cover {
+    background-image: url('../images/bg.jpg');
+    background-size: 100%;
+    background-position: 50% -333px;
+    height: 150vh;
+    width: 1519px;
+    font: bolder 70px/115vh 'Times New Roman', 'Courier New', Courier, monospace;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    /* top: -100px; */
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: -450px;
+    margin-top: 100px;
+    transition: all 1s;
+}
+
+.cover::before {
+    content: '';
+    background-size: 100%;
+    background-image: inherit;
+    background-position: 50% -333px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+    transition: all 1s;
+}
+
+.tittle {
+    position: absolute;
+    /* top: 250px; */
+    opacity: 0;
+    text-align: center;
+    width: 1519px;
+    /* letter-spacing: 5px; */
+    font-size: 80px;
+    line-height: 1.5em;
+    color: #fff;
+    transition: all 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+    animation: begin 1s ease-out 0.5s forwards;
+}
+
+.tittle2 {
+    position: absolute;
+    /* top: 300px; */
+    opacity: 0;
+    text-align: center;
+    width: 1519px;
+    /* letter-spacing: 5px; */
+    font-size: 80px;
+    line-height: 4.5em;
+    color: #fff;
+    transition: all 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+    animation: begin 1s ease-out 1s forwards;
+}
+
+@keyframes begin {
+    from {
+        opacity: 0;
+        top: 250px;
+    }
+    to {
+        opacity: 1;
+        top: 200px;
+    }
+}
+
+/*统一设置背景的background-attchment属性*/
+.article {
+    position: absolute;
+    width: 1519px;
+    /* margin: 0 auto; */
+    height: 800px;
+    text-align: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*分别给每个部分设置不同的背景和颜色*/
+.section1 {
+    top: 1050px;
+    background-image: url(../images/g1.png);
+}
+.section2 {
+    top: 2000px;
+    background-image: url(../images/g2.jpg);
+}
+.section3 {
+    top: 2850px;
+    background-image: url(../images/g4.jpg);
+}
+
+.d {
+    position: absolute;
+    width: 1519px;
+    height: 350px;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    transition: all 0.01s;
+    line-height: 350px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.d1 {
+    top: 890px;
+}
+
+.d2 {
+    top: 1990px;
+}
+
+.d3 {
+    top: 2990px;
+}
+
+.h {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    transition: all 0.01s;
+    text-align: center;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h1 {
+    left: 515px;
+    top: 2000vh;
+}
+
+.h2 {
+    left: 425px;
+    top: 3200vh;
+}
+
+.h3 {
+    left: 350px;
+    top: 4400vh;
+}
